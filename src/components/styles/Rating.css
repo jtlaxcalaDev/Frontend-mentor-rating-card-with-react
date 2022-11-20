@@ -1,0 +1,97 @@
+@import url('../../variables.css');
+
+/*Rating card styles*/
+
+.rating-card {
+  width: 360px;
+  padding: 2rem;
+  border-radius: 30px;
+  background: radial-gradient(
+    circle at top, 
+    var(--dark-blue) 5%,
+    var(--very-dark-blue) 140%
+  );
+} 
+
+.radio--container {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 15px;
+}
+
+.card--title {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 2.3rem;
+}
+
+.rate--values {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 2.3rem;
+}
+
+.rate--value:hover {
+  background-color: var(--medium-rey);
+  color: var(--white);
+}
+
+.rate--value, .card--cta {
+  cursor: pointer;
+}
+
+.rate--selected {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  font-size: 18px;
+}
+
+.card--cta {
+  border: none;
+  height: 3rem;
+  border-radius: 100px;
+  width: 100%;
+  background-color: var(--primary-orange);
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 2px;
+}
+
+.card--cta:hover {
+  background-color: var(--white);
+  color: var(--primary-orange);
+  transition: ease-in-out .5s;
+}
+
+/*Results card styles*/
+
+.results--card {
+  width: 340px;
+  padding: 2rem;
+  border-radius: 30px;
+  background: radial-gradient(
+    circle at top, 
+    var(--dark-blue) 5%,
+    var(--very-dark-blue) 140%
+  );
+  text-align: center;
+}
+
+.card--results_info {
+  margin-block: 2rem;
+}
+
+.card--results_info > span{
+  color: var(--primary-orange);
+  background-color: var(--dark-blue);
+  padding: .4rem 1.2rem;
+  border-radius: 30px;
+}

@@ -1,0 +1,17 @@
+@import url('./variables.css');
+
+:root {
+  margin: 0px 0px;
+  font-family: 'Overpass', Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0px 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
+}
