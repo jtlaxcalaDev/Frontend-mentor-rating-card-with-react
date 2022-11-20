@@ -1,14 +1,19 @@
 import './styles/Rating.css'
 import starImage from '../assets/images/icon-star.svg'
 import thanksImage from '../assets/images/illustration-thank-you.svg'
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 
-const Rating = () => {
-  const [verifyAnswers, setVerifyAnswers] = useState(false)
+interface rating {
+  id: number,
+  value: string
+}
+
+const Rating: FunctionComponent = () => {
+  const [verifyAnswers, setVerifyAnswers] = useState<boolean>(false)
   const [selection, setSelection] = useState<number | undefined>(undefined)
 
-  const rateValues = [
-    {id:1, value:'1'},{id:2, value: '2'},{id:3, value: '3'},{id:4, value: '4'},{id:5, value:5}
+  const rateValues: rating[]  = [
+    {id:1, value:'1'},{id:2, value: '2'},{id:3, value: '3'},{id:4, value: '4'},{id:5, value:'5'}
   ]
 
   const ratings = rateValues.map(rate => {
