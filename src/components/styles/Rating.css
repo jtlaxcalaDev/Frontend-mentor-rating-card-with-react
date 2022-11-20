@@ -2,7 +2,7 @@
 
 /*Rating card styles*/
 
-.rating-card {
+.rating--card {
   width: 360px;
   padding: 2rem;
   border-radius: 30px;
@@ -94,4 +94,31 @@
   background-color: var(--dark-blue);
   padding: .4rem 1.2rem;
   border-radius: 30px;
+}
+
+/*screen media query*/
+@media only screen and (max-width: 380px) {
+  .rating--card, .results--card {
+    font-size: 12px;
+    padding: 1.8em;
+    width: 290px;
+  }
+
+  .radio--container {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .card--title {
+    margin-top: 1.5rem;
+    font-size: 22px;
+  }
+
+  .rate--values {
+    margin-block: 1.5rem;
+  }
+
+  .card--cta {
+    height: 2.8rem
+  }
 }

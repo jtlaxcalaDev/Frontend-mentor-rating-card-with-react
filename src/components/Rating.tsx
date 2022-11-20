@@ -21,7 +21,7 @@ const Rating = () => {
   })
 
   const RatingCardView = ( 
-    <div className="rating-card">
+    <div className="rating--card">
       <div className="card--header radio--container">
         <img src={ starImage } alt="star header"/>
       </div>
